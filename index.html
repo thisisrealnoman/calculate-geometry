@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Gem</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-8">
+  <header>
+
+  </header>
+  <main>
+    <!-- main content container -->
+    <div class="flex flex-col md:flex-row">
+      <!-- shape container -->
+      <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Triangle  -->
+        <div class="card card-compact bg-base-100 w-72 shadow-xl">
+          <figure>
+            <img src="images/triangle.png" alt="triangle shape" class="size-40" />
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="card-title justify-center">Triangle</h2>
+            <p>A = 0.5 x b x h</p>
+            <div class="">
+              <input id="triangle-base" class="w-20 h-10 text-lg p-2 rounded-sm bg-blue-100 b-2 border-2" type="text"
+                placeholder="b">
+              <span>cm</span>
+              <input id="triangle-height" class="w-20 h-10 text-lg p-2 rounded-sm bg-blue-100 b-2 border-2" type="text"
+                placeholder="h">
+              <span>cm</span>
+            </div>
+            <div class="text-lg">
+              <p>Area: <span id="triangle-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <div class="card-actions justify-end">
+              <button onclick="calculateTriangleArea()" class="btn w-full bg-sky-300">Calculate</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- area container -->
+        <div class="border-2 border-gray-500 rounded-md">
+          <div id="area-sub-container" class="w-72">
+            <h3 class="text-3xl text-center">Area Calculation</h3>
+
+          </div>
+        </div>
+      </div>
+
+  </main>
+  <script src="scripts/triangle.js"></script>
+</body>
+
+</html>
