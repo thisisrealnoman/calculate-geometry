@@ -108,6 +108,96 @@
           </div>
         </div>
 
+        <!-- Rhombus -->
+        <div class="card card-compact bg-base-100 w-72 shadow-xl">
+          <figure>
+            <img
+              src="images/rhombus.png"
+              alt="Rhombus" 
+              class="size-40"/>
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="card-title justify-center">Rhombus</h2>
+            <p>Area (A) = 0.5 X<span> d<sub>1 </sub>X</span><span> d<sub>2</sub></span></p>
+            <div>
+              <!-- rhombus d1 -->
+              <input id="rhombus-d1" class="w-20 h-10 text-lg rounded-sm bg-blue-100 border-2 p-2" type="text" placeholder="d1">
+              <span>cm</span>
+              <!-- rhombus d2 -->
+              <input id="rhombus-d2" class="w-20 h-10 text-lg rounded-sm bg-blue-100 border-2 p-2" type="text" placeholder="d2">
+              <span>cm</span>
+            </div>
+            <!-- rhombus area -->
+            <div class="text-lg">
+              <p>Area: <span id="rhombus-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <!-- rhombus calculate button -->
+            <div class="card-actions justify-end">
+              <button onclick="calculateRhombusArea()" class="btn w-full bg-sky-300">Calculate</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pentagon -->
+        <div class="card card-compact bg-base-100 w-72 shadow-xl">
+          <figure>
+            <img
+              src="images/pentagon.png"
+              alt="pentagon" 
+              class="size-40"/>
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="card-title justify-center">Pentagon</h2>
+            <p>Area (A) = 0.5 X p X b</p>
+            <div>
+              <!-- pentagon p -->
+              <input id="pentagon-p" class="w-20 h-10 text-lg rounded-sm bg-blue-100 border-2 p-2" type="text" placeholder="b">
+              <span>cm</span>
+              <!-- pentagon b -->
+              <input id="pentagon-b" class="w-20 h-10 text-lg rounded-sm bg-blue-100 border-2 p-2" type="text" placeholder="h">
+              <span>cm</span>
+            </div>
+            <!-- pentagon area -->
+            <div class="text-lg">
+              <p>Area: <span id="pentagon-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <!-- pentagon calculate button -->
+            <div class="card-actions justify-end">
+              <button onclick="calculatePentagonArea()" class="btn w-full bg-sky-300">Calculate</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ellipse -->
+        <div class="card card-compact bg-base-100 w-72 shadow-xl">
+          <figure>
+            <img
+              src="images/ellipse.png"
+              alt="Ellipse" 
+              class="size-40"/>
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="card-title justify-center">Ellipse</h2>
+            <p>Area (A) = pie X a X b</p>
+            <div>
+              <!-- ellipse a -->
+              <input id="ellipse-a" class="w-20 h-10 text-lg rounded-sm bg-blue-100 border-2 p-2" type="text" placeholder="b">
+              <span>cm</span>
+              <!-- ellipse b -->
+              <input id="ellipse-b" class="w-20 h-10 text-lg rounded-sm bg-blue-100 border-2 p-2" type="text" placeholder="h">
+              <span>cm</span>
+            </div>
+            <!-- ellipse area -->
+            <div class="text-lg">
+              <p>Area: <span id="ellipse-area"></span><span> cm<sup>2</sup></span></p>
+            </div>
+            <!-- ellipse calculate button -->
+            <div class="card-actions justify-end">
+              <button onclick="calculateEllipseArea()" class="btn w-full bg-sky-300">Calculate</button>
+            </div>
+          </div>
+        </div>
+
         <!-- area container -->
         <div class="border-2 border-gray-500 rounded-md">
           <div id="area-sub-container" class="w-72">
@@ -121,6 +211,8 @@
   <script src="scripts/triangle.js"></script>
   <script src="scripts/rectangle.js"></script>
   <script src="scripts/parallelogram.js"></script>
+  <script src="scripts/rhombus.js"></script>
+  <script src="scripts/pentagon.js"></script>
 </body>
 
 </html>
